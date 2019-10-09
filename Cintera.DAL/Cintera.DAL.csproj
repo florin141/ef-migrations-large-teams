@@ -50,13 +50,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Case.cs" />
     <Compile Include="CinteraContext.cs" />
+    <Compile Include="Migrations\201910091234281_AddedCase.cs" />
+    <Compile Include="Migrations\201910091234281_AddedCase.Designer.cs">
+      <DependentUpon>201910091234281_AddedCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910091238565_SingularTableNames.cs" />
+    <Compile Include="Migrations\201910091238565_SingularTableNames.Designer.cs">
+      <DependentUpon>201910091238565_SingularTableNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910091234281_AddedCase.resx">
+      <DependentUpon>201910091234281_AddedCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910091238565_SingularTableNames.resx">
+      <DependentUpon>201910091238565_SingularTableNames.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
